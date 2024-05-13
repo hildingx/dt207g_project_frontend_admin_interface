@@ -2,8 +2,8 @@
   "name": "dt207g_project_frontend_admin_interface",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel serve ./src/index.html ./src/dashboard.html ./src/menus.html ./src/bookings.html ./src/logout.html",
-    "build": "parcel build ./src/index.html ./src/dashboard.html ./src/menus.html ./src/bookings.html ./src/logout.html"
+    "start": "parcel serve ./src/index.html ./src/dashboard.html ./src/menu.html ./src/bookings.html ./src/logout.html",
+    "build": "parcel build ./src/index.html ./src/dashboard.html ./src/menu.html ./src/bookings.html ./src/logout.html"
   },
   "keywords": [],
   "author": "",
