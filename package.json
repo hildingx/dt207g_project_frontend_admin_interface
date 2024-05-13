@@ -1,0 +1,15 @@
+{
+  "name": "dt207g_project_frontend_admin_interface",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "parcel serve ./src/index.html ./src/about.html ./src/book.html",
+    "build": "parcel build ./src/index.html ./src/about.html ./src/book.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "parcel": "^2.12.0"
+  }
+}
