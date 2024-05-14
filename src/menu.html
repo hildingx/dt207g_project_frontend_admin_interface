@@ -6,6 +6,7 @@
     <title>Document</title>
     <script type="module" src="js/authCheck.js"></script>
     <script type="module" src="js/menu.js"></script>
+    <link rel="stylesheet" href="./css/main.scss">
 </head>
 <body>
     <header>
@@ -19,6 +20,7 @@
     </header>
     <main>
         <h1>Menyer</h1>
+        <button id="openAddModal">Lägg till Menyobjekt</button>
         <div id="menu">
             <div id="starters">
                 <ul></ul>
@@ -31,6 +33,54 @@
             </div>
             <div id="drinks">
                 <ul></ul>
+            </div>
+        </div>
+        <!-- Gömd modal / form för ändring av menyobjekt -->
+        <div id="editModal">
+            <div>
+                <h1>Ändra Menyobjekt</h1>
+                <form id="editForm">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="editName" name="name"><br><br>
+                    <label for="price">Pris:</label>
+                    <input type="number" id="editPrice" name="price"><br><br>
+                    <label for="category">Kategori:</label>
+                    <select id="editCategory" name="category" required>
+                        <option value="" disabled selected>Kategori</option>
+                        <option value="starter">Förrätt</option>
+                        <option value="main course">Huvudrätt</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="drink">Dryck</option>
+                    </select><br><br>
+                    <label for="description">Beskrivning:</label>
+                    <textarea id="editDescription" name="description"></textarea><br><br>
+                    <input type="hidden" id="editId">
+                    <button type="button" id="closeEditModal">Stäng</button>
+                    <button type="submit">Spara Ändringar</button>
+                </form>
+            </div>
+        </div>
+        <div id="addModal">
+            <div>
+                <h1>Lägg till nytt Menyobjekt</h1>
+                <form id="addForm">
+                    <label for="name">Namn:</label>
+                    <input type="text" id="addName" name="name" required><br><br>
+                    <label for="price">Pris:</label>
+                    <input type="number" id="addPrice" name="price" required><br><br>
+                    <label for="category">Kategori:</label>
+                    <select id="addCategory" name="category" required>
+                        <option value="" disabled selected>Kategori</option>
+                        <option value="starter">Förrätt</option>
+                        <option value="main course">Huvudrätt</option>
+                        <option value="dessert">Dessert</option>
+                        <option value="drink">Dryck</option>
+                    </select><br><br>
+                    <label for="description">Beskrivning:</label>
+                    <textarea id="addDescription" name="description" required></textarea><br><br>
+                    <button type="button" id="closeAddModal">Stäng</button>
+                    <button type="submit">Lägg till</button>
+                </form>
             </div>
         </div>
     </main>

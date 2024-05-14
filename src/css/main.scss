@@ -1,0 +1,37 @@
+#editModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#editModal > div {
+    background: white;
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#addModal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#addModal > div {
+    background: white;
+    padding: 20px;
+    margin: 10% auto;
+    width: 50%;
+    border-radius: 5px;
+}

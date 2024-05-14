@@ -1,4 +1,3 @@
-//Element att visa eller dölja beroende på om giltig token finns eller ej.
 document.addEventListener('DOMContentLoaded', checkToken);
 
 async function checkToken() {
