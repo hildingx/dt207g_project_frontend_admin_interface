@@ -1,3 +1,6 @@
+@use 'login';
+@use 'layout';
+
 #editModal {
     display: none;
     position: fixed;
@@ -34,4 +37,18 @@
     margin: 10% auto;
     width: 50%;
     border-radius: 5px;
+}
+
+#bookingDiv {
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
 }

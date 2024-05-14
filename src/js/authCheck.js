@@ -14,14 +14,11 @@ async function checkToken() {
                 'Authorization': `Bearer ${token}`
             }
         });
-        console.log("Anrop ok");
         
         if (!response.ok) {
             localStorage.removeItem('token');
             window.location.href = 'http://localhost:1234/logout.html';
             console.log("Token finns ej");
-        } else {
-            console.log("Token giltig");
         }
     } catch (error) {
         console.error('Failed to check token', error);
