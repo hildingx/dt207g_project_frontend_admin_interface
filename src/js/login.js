@@ -5,6 +5,11 @@ document.getElementById('loginForm').addEventListener('submit', async function(e
     const username = sanitizeInput(document.getElementById('username').value);
     const password = sanitizeInput(document.getElementById('password').value);
 
+    //Laddningsindikator
+    const loadingIndicatorEl = document.getElementById('loadingIndicator');
+    //Visa laddningsindikator
+    loadingIndicatorEl.style.display = 'block';
+    
     try {
         await adminLogin(username, password);
         

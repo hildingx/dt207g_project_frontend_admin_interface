@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inloggning</title>
     <script type="module" src="js/login.js"></script>
     <link rel="stylesheet" href="css/main.scss">
 </head>
@@ -16,16 +16,20 @@
             <h1>Administratörs&shy;inloggning</h1>
             <form id="loginForm">
                     <label for="username">Användarnamn:</label>
-                    <input type="text" id="username" name="username" required><br><br>
+                    <input type="text" id="username" name="username" required>
 
                     <label for="password">Lösenord:</label>
-                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="password" id="password" name="password" required>
                 <button type="submit">Logga in</button>
             </form>
         </div>
+        <div id="loadingIndicator" style="display: none;">
+            <div id="spinner"></div>
+            <p class="login-load">Loggar in...</p>
+        </div>
     </main>
     <footer>
-
+        <p>Alexander Hilding</p>
     </footer>
 </body>
 </html>

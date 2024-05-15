@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menyhantering</title>
     <script type="module" src="js/authCheck.js"></script>
     <script type="module" src="js/menu.js"></script>
-    <link rel="stylesheet" href="./css/main.scss">
+    <script type="module" src="js/logout.js"></script>
+    <link rel="stylesheet" href="css/main.scss">
 </head>
 <body>
     <header>
@@ -17,21 +18,29 @@
                 <li><a href="bookings.html">Bokningar</a></li>
             </ul>
         </nav>
+        <button id="logoutBtnHeader" class="logout-btn-corner">Logga ut</button>
     </header>
     <main>
         <h1>Menyer</h1>
         <button id="openAddModal">Lägg till Menyobjekt</button>
         <div id="menu">
             <div id="starters">
+                <h2>Förrätter</h2>
                 <ul></ul>
             </div>
+            <span class="span-line"></span>
             <div id="mainCourses">
+                <h2>Huvudrätter</h2>
                 <ul></ul>
             </div>
+            <span class="span-line"></span>
             <div id="desserts">
+                <h2>Efterrätter</h2>
                 <ul></ul>
             </div>
+            <span class="span-line"></span>
             <div id="drinks">
+                <h2>Drycker</h2>
                 <ul></ul>
             </div>
         </div>
@@ -85,7 +94,7 @@
         </div>
     </main>
     <footer>
-
+        <p>Alexander Hilding</p>
     </footer>
 </body>
 </html>

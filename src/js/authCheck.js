@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', checkToken);
 async function checkToken() {
     const token = localStorage.getItem('token');
     if (!token) {
-        window.location.href = 'http://localhost:1234/logout.html';
+        window.location.href = '/logout.html';
         console.log("Token finns ej");
     }
 
@@ -17,11 +17,11 @@ async function checkToken() {
         
         if (!response.ok) {
             localStorage.removeItem('token');
-            window.location.href = 'http://localhost:1234/logout.html';
+            window.location.href = '/logout.html';
             console.log("Token finns ej");
         }
     } catch (error) {
         console.error('Failed to check token', error);
-        window.location.href = 'http://localhost:1234/logout.html';
+        window.location.href = '/logout.html';
     }
 }
