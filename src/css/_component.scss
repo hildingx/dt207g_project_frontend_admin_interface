@@ -82,9 +82,11 @@
 
 .span-line {
     display: inline-block;
-        width: 1px;
-        height: 100vh;
-        background-color: black;
+    width: 1px;
+    height: 100vh;
+    background-color: black;
+    margin-right: 15px;
+    margin-left: 5px;
 }
 
 .logout-btn-corner {
