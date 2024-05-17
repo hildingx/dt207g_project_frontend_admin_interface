@@ -12,17 +12,20 @@
 
     </header>
     <main>
+        <!-- Inloggningsruta -->
         <div class="login-container">
             <h1>Administratörs&shy;inloggning</h1>
             <form id="loginForm">
-                    <label for="username">Användarnamn:</label>
-                    <input type="text" id="username" name="username" required>
+                <label for="username">Användarnamn:</label>
+                <input type="text" id="username" name="username" required>
 
-                    <label for="password">Lösenord:</label>
-                    <input type="password" id="password" name="password" required>
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" name="password" required>
+                <div id="loginError"></div>
                 <button type="submit">Logga in</button>
             </form>
         </div>
+        <!-- Laddningsindikator -->
         <div id="loadingIndicator" style="display: none;">
             <div id="spinner"></div>
             <p class="login-load">Loggar in...</p>

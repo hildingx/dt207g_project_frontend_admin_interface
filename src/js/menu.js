@@ -1,5 +1,4 @@
-
-
+//Funktion för att hämta menyn
 async function fetchMenu() {
     try {
         const response = await fetch(`https://dt207g-project-backend.onrender.com/api/menu`, {
@@ -20,10 +19,13 @@ async function fetchMenu() {
     }
 }
 
+//Funktion för att skriva ut menyn i DOM
 async function displayMenu() {
     try {
+        //Hämta menydata
         const data = await fetchMenu();
 
+        //Hämta element
         const starterList = document.querySelector("#starters ul");
         const mainCourseList = document.querySelector("#mainCourses ul");
         const dessertList = document.querySelector("#desserts ul");
@@ -45,7 +47,8 @@ async function displayMenu() {
                 <button class="edit-button" data-id="${menu._id}">Redigera</button>
                 <button class="delete-button" data-id="${menu._id}">Ta bort</button>
             `;
-
+            
+            //Lägger menyobjekt i rätt kategori
             if (menu.category === "starter") {
                 starterList.appendChild(menuItem);
             } else if (menu.category === "main course") {

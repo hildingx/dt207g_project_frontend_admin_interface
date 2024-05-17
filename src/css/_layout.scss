@@ -55,6 +55,10 @@ main {
     flex-grow: 1;
 }
 
+.dash {
+    margin-top: 200px;
+}
+
 .login-load {
     font-size: 1.2em;
 }
@@ -86,6 +90,11 @@ main {
     text-align: center;
     margin-top: 150px;
 }
+
+#logOutHref {
+    text-align: center;
+}
+
 footer {
     margin-bottom: 20px;
     text-align: center;

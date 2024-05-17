@@ -1,4 +1,4 @@
-//Logga ut
+//Händelsehanterarfunktion som kör logga ut-funktion vid klick på logout-knapp
 document.addEventListener('DOMContentLoaded', function() {
     const logoutBtnHeader = document.getElementById('logoutBtnHeader');
 
@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function logoutFunction() {
-    localStorage.removeItem('authToken');
+    localStorage.removeItem('token');
     window.location.href = '/logout.html';
 }
