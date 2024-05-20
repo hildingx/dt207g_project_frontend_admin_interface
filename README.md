@@ -10,4 +10,4 @@ Efter inloggning kan användaren navigera mellan olika sektioner av applikatione
 
 Frontend är byggd med HTML, SCSS och JavaScript, medan backend är hostad på Render och använder en MongoDB-databas hostad på MongoDB Atlas.
 
-Webbapplikationen är publicerad och tillgänglig på https://statuesque-crostata-6ac0fa.netlify.app/. Användare kan logga in med administratörskontot och börja hantera menyn och bokningarna direkt.
+Webbapplikationen är publicerad och tillgänglig på https://rococo-creponne-287687.netlify.app/. Användare kan logga in med administratörskontot och börja hantera menyn och bokningarna direkt.
