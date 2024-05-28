@@ -5,14 +5,14 @@ tokenAvail();
 function tokenAvail() {
     const token = localStorage.getItem('token');
     if (!token) {
-        window.location.href = '/login.html';
+        window.location.href = '/index.html';
     }
 }
 
 //Funktion för att kontrollera om token är giltig
 async function checkToken() {
     const token = localStorage.getItem('token');
-    displayBodyEl = document.querySelector('body.display-body');
+    const displayBodyEl = document.querySelector('body.display-body');
 
     try {
         //Verifiera token genom get-anrop till API
