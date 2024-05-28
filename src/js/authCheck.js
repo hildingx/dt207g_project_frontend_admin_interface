@@ -27,7 +27,7 @@ async function checkToken() {
             window.location.href = '/logout.html';
         } else {
             //Token är giltig, visa sidan
-            displayBodyEl.style.display = 'block';
+            displayBodyEl.style.display = 'flex';
         }
     } catch (error) {
         console.error('Failed to check token', error);
